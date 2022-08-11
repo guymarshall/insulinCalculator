@@ -1,0 +1,30 @@
+<!-- make background black and text white -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Insulin Calculator</title>
+</head>
+<body>
+    <form>
+        <label for="carbsPer100">Carbohydrate per 100g:</label>
+        <br>
+        <input type="number" id="carbsPer100" name="carbsPer100" step="0.1" autocomplete="nope" min="0">
+        <br>
+        <label for="gramsOnScale">Grams on scale</label>
+        <br>
+        <input type="number" id="gramsOnScale" name="gramsOnScale" step="0.1" autocomplete="nope" min="0">
+        <br>
+        <label for="insulinRatio">Insulin ratio (insulin per 10g carbohydrate)</label>
+        <br>
+        <input type="number" id="insulinRatio" name="insulinRatio" step="0.1" autocomplete="nope" min="0">
+        <br>
+        <br>
+        <button type="button" id="calculate" name="calculate">Calculate</button>
+    </form>
+    <hr>
+</body>
+</html>
